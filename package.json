@@ -11,27 +11,27 @@
     "postinstall": "husky install"
   },
   "dependencies": {
-    "vue": "^3.0.5",
-    "vue-router": "^4.0.10"
+    "vue": "^3.2.1",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
-    "@types/node": "^15.14.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "@vitejs/plugin-vue": "^1.2.3",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "@vitejs/plugin-vue": "^1.4.0",
+    "@vue/compiler-sfc": "^3.2.1",
     "@vueuse/head": "^0.6.0",
-    "eslint": "^7.29.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "husky": "^7.0.0",
+    "eslint-plugin-vue": "^7.15.1",
+    "husky": "^7.0.1",
     "prettier": "^2.3.2",
-    "sass": "^1.35.1",
-    "typescript": "^4.3.2",
-    "vite": "^2.3.7",
-    "vite-ssr": "^0.10.6",
-    "vue-eslint-parser": "^7.6.0",
-    "vue-tsc": "^0.0.24"
+    "sass": "^1.37.5",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.4",
+    "vite-ssr": "^0.12.0",
+    "vue-eslint-parser": "^7.10.0",
+    "vue-tsc": "^0.2.2"
   }
 }
