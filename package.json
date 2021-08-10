@@ -12,7 +12,7 @@
     "url": "https://github.com/jheysondev/website"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite-ssr dev",
     "build": "vue-tsc --noEmit && vite build",
     "build:force": "vue-tsc --noEmit || true && vite build",
     "serve": "vite preview",
