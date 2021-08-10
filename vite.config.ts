@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import viteSSR from 'vite-ssr/plugin' 
+import viteSSR from 'vite-ssr/plugin'
 import path from 'path'
 
 export default defineConfig({
@@ -10,5 +10,5 @@ export default defineConfig({
       { find: '~@', replacement: path.join(__dirname, './src/assets') },
     ],
   },
-  plugins: [viteSSR(), vue()]
+  plugins: [viteSSR(), vue()],
 })

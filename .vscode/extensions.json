@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "octref.vetur",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "gruntfuggly.todo-tree"
+  ]
+}

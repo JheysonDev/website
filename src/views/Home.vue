@@ -1,4 +1,4 @@
-<template>This is Home View</template>
+<template>This is Home View <code>TypeScript + Vue</code></template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'

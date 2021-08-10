@@ -1,0 +1,5 @@
+# Keep this file below 500 KiB
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
