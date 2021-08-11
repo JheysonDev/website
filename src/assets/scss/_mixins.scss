@@ -1,0 +1,27 @@
+@import 'variables';
+
+@mixin breakpoint($prefix) {
+  @if $prefix == 'sm' {
+    @media (min-width: $bp-sm) {
+      @content;
+    }
+  } @else if $prefix == 'md' {
+    @media (min-width: $bp-md) {
+      @content;
+    }
+  } @else if $prefix == 'lg' {
+    @media (min-width: $bp-lg) {
+      @content;
+    }
+  } @else if $prefix == 'xl' {
+    @media (min-width: $bp-xl) {
+      @content;
+    }
+  } @else if $prefix == '2xl' {
+    @media (min-width: $bp-2xl) {
+      @content;
+    }
+  } @else {
+    @warn "Prefix not found";
+  }
+}
