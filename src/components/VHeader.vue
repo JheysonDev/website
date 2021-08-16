@@ -23,7 +23,14 @@
         </ul>
       </nav>
     </div>
-    <div class="header__access"></div>
+    <div class="header__links">
+      <a href="//github.com/JheysonSaavedr4" target="_blank">
+        <v-icon :icon="['fab', 'github']" />
+      </a>
+      <a href="//twitter.com/JheysonSaavedr4" target="_blank">
+        <v-icon :icon="['fab', 'twitter']" />
+      </a>
+    </div>
   </header>
 </template>
 
@@ -43,7 +50,9 @@ export default defineComponent({
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 1.6rem;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 2px 2px 20px 10px #e9e9e9;
   user-select: none;
   position: sticky;
@@ -85,6 +94,30 @@ export default defineComponent({
           color: $color-primary-500;
           transition: color 0.3s ease-in-out;
         }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.2rem;
+      color: $color-gray-500;
+      margin: 0 0.2rem;
+
+      &:hover {
+        color: $color-secondary-500;
+      }
+
+      @include breakpoint(md) {
+        margin: 0 0.4rem;
+      }
+
+      @include breakpoint(lg) {
+        margin: 0 0.6rem;
       }
     }
   }
