@@ -17,7 +17,7 @@ export default viteSSR(App, { routes }, ({ app }) => {
   app.component(ClientOnly.name, ClientOnly)
 
   // Layouts
-  app.component(LayoutDefault.name, LayoutDefault)
+  app.component('DefaultLayout', LayoutDefault)
 
   // FontAwesome
   library.add(faGithub, faTwitter)

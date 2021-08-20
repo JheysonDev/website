@@ -8,46 +8,36 @@
   </main>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
+<script lang="ts" setup>
+import { ref } from 'vue'
 import VHeader from '@/components/VHeader.vue'
 
-export default defineComponent({
-  name: 'DefaultLayout',
-  components: { VHeader },
-  props: {
-    hTitle: {
-      type: String,
-      required: true,
-    },
-    hTitleTemplate: {
-      type: String,
-      default: '{hTitle} - {hSiteName}',
-    },
-    hDescription: {
-      type: String,
-      default: 'A software programmer',
-    },
-    hSiteName: {
-      type: String,
-      default: 'Jheyson Saavedra',
-    },
+const props = defineProps({
+  hTitle: {
+    type: String,
+    required: true,
   },
-  setup(props) {
-    let finalTitle = ref(props.hTitleTemplate)
-
-    for (const key in props) {
-      finalTitle.value = finalTitle.value.replace(
-        `{${key}}`,
-        (props as any)[key] // eslint-disable-line
-      )
-    }
-
-    return {
-      finalTitle,
-    }
+  hTitleTemplate: {
+    type: String,
+    default: '{hTitle} - {hSiteName}',
+  },
+  hDescription: {
+    type: String,
+    default: 'A software programmer',
+  },
+  hSiteName: {
+    type: String,
+    default: 'Jheyson Saavedra',
   },
 })
+
+let finalTitle = ref(props.hTitleTemplate)
+for (const key in props) {
+  finalTitle.value = finalTitle.value.replace(
+    `{${key}}`,
+    (props as any)[key] // eslint-disable-line
+  )
+}
 </script>
 
 <style lang="scss" scoped>

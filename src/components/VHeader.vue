@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__icon">
       <router-link to="/">
-        <img src="" alt="Icon" />
+        <img src="/favicon.ico" alt="Icon" />
       </router-link>
     </div>
     <div class="header__navigation">
@@ -34,13 +34,7 @@
   </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'VHeader',
-})
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 @import '~@/scss/mixins', '~@/scss/variables';
@@ -49,21 +43,33 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 1.6rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.4rem 0.6rem;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 2px 2px 20px 10px #e9e9e9;
   user-select: none;
-  position: sticky;
-  top: 0;
 
   @include breakpoint(md) {
-    padding: 0.9rem 1.7rem;
+    padding: 0.6rem 1.7rem;
   }
 
   @include breakpoint(lg) {
-    padding: 1rem 1.4rem;
+    padding: 0.7rem 2rem;
+  }
+
+  &__icon {
+    a {
+      display: flex;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 
   &__navigation .navigation .navigation__items {

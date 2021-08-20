@@ -28,7 +28,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^3.0.0-4",
-    "vue": "^3.2.1",
+    "vue": "^3.2.2",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "@vitejs/plugin-vue": "^1.4.0",
-    "@vue/compiler-sfc": "^3.2.1",
+    "@vue/compiler-sfc": "^3.2.2",
     "@vueuse/head": "^0.6.0",
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.7",

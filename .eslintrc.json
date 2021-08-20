@@ -19,5 +19,9 @@
     "sourceType": "module"
   },
   "plugins": ["vue", "prettier", "@typescript-eslint"],
-  "rules": {}
+  "rules": {
+	"vue/no-undef": ["error", {
+        "knownMembers": ["defineProps"]
+    }]
+  }
 }
