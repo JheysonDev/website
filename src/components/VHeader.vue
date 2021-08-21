@@ -12,7 +12,7 @@
             <router-link to="/">About</router-link>
           </li>
           <li class="navigation__item">
-            <router-link to="/">Contanct</router-link>
+            <router-link to="/">Contact</router-link>
           </li>
           <li class="navigation__item">
             <router-link to="/">Projects</router-link>
