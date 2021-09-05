@@ -23,6 +23,12 @@ body {
   min-height: 100vh;
   overflow: hidden auto;
 
+  @supports (font-variation-settings: normal) {
+    & {
+      font-family: 'Inter var', sans-serif;
+    }
+  }
+
   kbd,
   samp,
   pre,
